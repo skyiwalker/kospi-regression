@@ -14,6 +14,7 @@ data = pd.read_csv('month-kospi.csv')
 # Y = data.iloc[:, 1].values.reshape(-1, 1)  # -1 means that calculate the dimension of rows, but have 1 column
 
 X = data.index.values
+XL = data.iloc[:, 0].values
 X = X + 1 # index start from 1
 Y = data.iloc[:, 1].values
 
